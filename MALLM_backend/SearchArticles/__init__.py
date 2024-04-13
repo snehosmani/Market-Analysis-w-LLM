@@ -22,12 +22,12 @@ def main(query: str):
     service = build(
         "customsearch", "v1", developerKey=CUSTOM_API_KEY
     )
-    #old "47277e31ddb064b72" 644edb1529def47cf
+    #add your search engine id to variable cx
     res = (
         service.cse()
         .list(
             q=query,
-            cx="644edb1529def47cf", 
+            cx="", 
             dateRestrict="y1",
 
         )
